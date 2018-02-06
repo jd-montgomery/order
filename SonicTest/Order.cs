@@ -34,9 +34,9 @@ namespace Exam
             for (int i = 0; i < orderItems.Length; i++)
             {
                 if (orderItems[i].GetItem() is Service)
-                    total += orderItems[i].GetTotal() + (orderItems[i].GetTotal() * taxRate);
-                else
                     total += orderItems[i].GetTotal();
+                else
+                    total += orderItems[i].GetTotal() + (orderItems[i].GetTotal() * taxRate);
             }
             
             return (float) Math.Round(total, 2);

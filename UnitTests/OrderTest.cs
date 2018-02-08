@@ -27,9 +27,9 @@ namespace UnitTests
 
         private OrderItem[] GetOrderItems()
         {
-            OrderItem[] orderItems = { new OrderItem(new Material(0, "Charlie", 1), 1),
-                                       new OrderItem(new Service(1, "Alpha", 2), 2),
-                                       new OrderItem(new Material(2, "Bravo", 3.3234f), 3) };
+            OrderItem[] orderItems = { new OrderItem(new Service(0, "Charlie", 1), 1),
+                                       new OrderItem(new Material(1, "Alpha", 2), 2),
+                                       new OrderItem(new Service(2, "Bravo", 3.3234f), 3) };
             return orderItems;
         }
     }
